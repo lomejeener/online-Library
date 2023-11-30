@@ -1,0 +1,195 @@
+/*Default Adjustments*/
+:root {
+  --color-secondary: #00acc1;
+  --color-accent: #F86F03;
+  --color-body: #212121;
+  --color-text: #FBFFDC;
+  --colorButton: #847f7d;
+  --colorBorder: #A8A196;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*,
+::placeholder {
+  color: var(--color-text);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", arial, helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background: var(--color-body);
+}
+
+.btn {
+  background: var(--colorButton);
+  border: .1rem solid var(--colorBorder);
+  border-radius: .3rem;
+}
+
+/*Basic divs*/
+.adjust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whole {
+  background: var(--color-secondary);
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  margin-top: 2rem;
+}
+
+/*Header*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Tab Elements*/
+.tabbed {
+  display: flex;
+  list-style: none;
+  padding: 0.1rem;
+  justify-content: center;
+}
+
+.tabButton1 {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.tabButton2 {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.tabbedContent p {
+  background: var(--color-accent);
+  width: 40ch;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  opacity: 1;
+}
+
+#author {
+  display: flex;
+  justify-content: center;
+  max-height: 0;
+  opacity: 0;
+}
+
+/*main*/
+main {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.book {
+  display: grid;
+  grid-template: 1fr / repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.bookText {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 1.3rem;
+}
+
+.bookButton {
+  grid-row: 1;
+  grid-column: 2;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+/*Search*/
+.search {
+  outline: none;
+  text-indent: 0.5rem;
+  font-size: 1.3rem;
+  background: var(--colorBorder);
+  border: .3rem solid var(--colorButton);
+  border-radius: .5rem;
+
+}
+
+.search::placeholder {
+  font-size: 1.25rem;
+}
+
+/*Hide*/
+.hide {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 0.8rem 0;
+}
+
+.hide label {
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+
+/*Add Section*/
+.add {
+  display: flex;
+  border: .3rem solid var(--colorButton);
+  border-radius: .5rem;
+  width: 70%;
+  margin-bottom: 1.3rem;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.addButton {
+  cursor: pointer;
+  font-size: 1.3rem;
+  border: 0;
+  border-radius: 0 .2rem .2rem 0;
+  background: var(--colorButton);
+}
+
+.add input {
+  outline: none;
+  text-indent: 0.5rem;
+  font-size: 1.3rem;
+  background: var(--colorBorder);
+  width: 0;
+  flex-grow: 1;
+  border: 0;
+}
+
+.add input::placeholder {
+  font-size: 1.25rem;
+}
+
+/*Power foot*/
+.powerFoot {
+  opacity: .4;
+}

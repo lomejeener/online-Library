@@ -1,0 +1,10 @@
+@media (min-width:319px) and (max-width:360px) {
+    .whole {
+        width: 95%;
+    }
+
+    #subText {
+        text-align: center;
+    }
+
+}

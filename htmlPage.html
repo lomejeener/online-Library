@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./cssPage.css" />
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Book your book here!</title>
+</head>
+
+<body>
+  <div class="adjust">
+    <div class="whole">
+      <header>
+        <h1 id="header">Book Booking Site</h1>
+        <h2 id="subText">Add and Delete Books Here!</h2>
+        <input type="text" class="search" required maxlength="50" pattern="\S(.*\S)?"
+          title="Your book name can't start or end with white space and should include at least 1 non-white space character"
+          placeholder="Search here..." />
+      </header>
+
+      <main>
+        <div class="book">
+          <p class="bookText">Harry Potter</p>
+          <button class="btn bookButton">Delete</button>
+        </div>
+
+        <div class="book">
+          <p class="bookText">Lord of The Ring</p>
+          <button class="btn bookButton">Delete</button>
+        </div>
+      </main>
+
+      <footer>
+        <div class="hide">
+          <input type="checkbox" id="hide" />
+          <label for="hide">Hide All</label>
+        </div>
+        <div class="formContainer">
+          <form class="add">
+            <input class="addBook" type="text" required maxlength="50" pattern="\S(.*\S)?"
+              title="Your book name can't start or end with white space and should include at least 1 non-white space character"
+              placeholder="e.g Harry Potter" name="" id="" />
+            <button class=" btn addButton">Add</button>
+          </form>
+        </div>
+        <div class="tabbed">
+          <button class="btn tabButton1" data-target="content">
+            Content
+          </button>
+          <button class="btn tabButton2" data-target="author">
+            About Author
+          </button>
+        </div>
+        <div class="tabbedContent" id="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Aliquam,
+            excepturi unde? Alias, magni debitis? Sit?
+          </p>
+        </div>
+        <div class="tabbedContent" id="author">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut
+            Aliquam, excepturi unde? Alias, magni debitis? Sit?
+          </p>
+        </div>
+      </footer>
+    </div>
+    <p class="powerFoot">Powered by Lome Jeener 2023</p>
+  </div>
+
+  <script src="javascriptPage.js"></script>
+</body>
+
+</html>
